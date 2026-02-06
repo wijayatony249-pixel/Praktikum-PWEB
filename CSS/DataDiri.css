@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 3.5rem 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    text-align: center;
+    max-width: 850px; 
+    width: 100%;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+}
+
+h1 { font-size: 2.2rem; color: #222; }
+.subtitle { font-size: 1.1rem; font-weight: 600; color: #444; margin-top: 10px; }
+.semester-info { font-size: 0.9rem; font-style: italic; color: #007bff; margin-bottom: 12px; }
+
+.tag {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* ABOUT ME */
+.About-me-section {
+    text-align: left;
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #f0f7ff;
+    border-radius: 12px;
+}
+
+.About-me-section h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.info-box { flex: 1; }
+
+.info-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #e9ecef;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.project-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #007bff;
+}
+
+hr { border: 0; border-top: 1px solid #eee; margin: 25px 0; }
+
+.contact-section { margin-top: 30px; }
+
+.contact-label {
+    font-weight: 800;
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #444;
+    transition: 0.3s;
+}
+
+.social-links a:hover { transform: scale(1.2); }
+.fa-instagram:hover { color: #E1306C; }
+.fa-youtube:hover { color: #FF0000; }
+.fa-whatsapp:hover { color: #25D366; }
+.fa-envelope:hover { color: #EA4335; }
+
+.btn-contact {
+    margin-top: 2.5rem;
+    padding: 14px;
+    background: #222;
+    color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 280px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-contact:hover { background: #007bff; }
+
+@media (max-width: 650px) {
+    .main-content { flex-direction: column; }
+}
